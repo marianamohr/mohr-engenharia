@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  box-sizing: border-box;
+  font-family: 'PT Sans', sans-serif;
+}
+
+header {
+  background-color: white;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  width: 200px;
+}
+
+header a {
+  color: #191c03;
+}
+
+header nav {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.8;
+  padding: 0 10px;
+}
+
+a:hover {
+  opacity: 1;
+}
+
+a:visited, a:hover, a:active {
+  color: inherit;
+}
+
+nav, ul {
+  list-style: none;
+}
+
+.hero {
+  background-image: url(images/hero.jpg);
+  background-size: cover;
+  min-height: 100vh;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  color: black;
+  opacity: 0.7;
+  font-size: 50px;
+  margin-bottom: 15px;
+  width: 90%;
+}
+
+.hero h3 {
+color: black;
+opacity: 0.5;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+
+.know-the-hotel {
+  padding: 100px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.know-the-hotel h3 {
+  font-size: 25px;
+  margin-bottom: 35px;
+  text-align: center;
+  color: #557e70;
+}
+
+.know-the-hotel p {
+  max-width: 800px;
+  margin-bottom: 35px;
+  text-align: center;
+  color: #557e70;
+}
+
+.know-the-hotel hr {
+  width: 200px;
+  height: 2px;
+  margin-bottom: 70px;
+  border: none;
+  background-color: #5e9f90;
+}
+
+.know-the-hotel .grid {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.know-the-hotel .grid li {
+  height: 350px;
+  padding: 20px;
+  border-radius: 4px;
+  background-clip: content-box;
+  background-size: cover;
+  background-position: center;
+}
+
+.know-the-hotel .grid li.small {
+  flex-basis: 40%;
+}
+
+.know-the-hotel .grid li.large {
+  flex-basis: 60%;
+}
+
+.features {
+  background-color: #5e9f90;
+  padding: 100px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.features h3 {
+  font-size: 25px;
+  margin-bottom: 35px;
+  text-align: center;
+  color: white;
+}
+
+.features p {
+  max-width: 800px;
+  margin-bottom: 35px;
+  text-align: center;
+  color: #3d5a50;
+}
+
+.features hr {
+  width: 200px;
+  height: 2px;
+  margin-bottom: 70px;
+  border: none;
+  background-color:white;
+}
+
+.features .grid {
+  width: 100%;
+  display: flex;
+}
+
+.features .grid li {
+  padding: 0 30px;
+  text-align: center;
+}
+
+.features .grid li i {
+  color: #3d5a50;
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+.features .grid li h4 {
+  font-size: 25px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 50px;
+}
+
+.newsletter h3 {
+  font-size: 25px;
+  margin-bottom: 35px;
+  text-align: center;
+  color: #3d5a50;
+}
+
+.newsletter p {
+  max-width: 800px;
+  margin-bottom: 35px;
+  text-align: center;
+  color: #3d5a50;
+}
+
+.contato {
+  width: 300px;
+  display: flex;
+  align-content: center;
+  justify-content: space-evenly;
+  color: #3d5a50;
+}
+
+.logo {
+ 
+  font-size: 35px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #5e9f90;;
+  padding: 50px 0;
+}
+
+footer p {
+  color: white;
+  text-align: center;
+}
+
+
+
+/* @media regras que temos que atender {
+  código
+} */
+
+@media screen and (max-width: 640px) {
+  header nav {
+    display: none;
+  }
+
+  header {
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .hero h3 {
+    font-size: 15px;
+  }
+
+  .know-the-hotel {
+    padding: 100px 10px;
+  }
+
+  .know-the-hotel .grid li {
+    padding: 10px;
+  }
+
+  .know-the-hotel .grid li.small {
+    flex-basis: 100%;
+  }
+  
+  .know-the-hotel .grid li.large {
+    flex-basis: 100%;
+  }
+
+  .features .grid {
+    flex-direction: column;
+  }
+
+  .newsletter button {
+    margin-top: 20px;
+  }
+
+  footer ul li i {
+    font-size: 45px;
+  }
+}
